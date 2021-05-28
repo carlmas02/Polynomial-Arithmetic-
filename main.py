@@ -54,7 +54,7 @@ class Linkedlist:
 		return print(s)
 
 
-		
+# still working on code below this->
 
 
 l = Linkedlist()
