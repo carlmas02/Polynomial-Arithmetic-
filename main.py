@@ -24,15 +24,18 @@ class Linkedlist:
 		if not (self.head):
 			self.head = Node(coeff,exp)
 			return
+		node_last = None
 		curr = self.head
 		prev = None
 		while curr is not None:
 			if exp > curr.exp:
 				if prev is None:
 					item = Node(coeff,exp)
+					item.next = self.head
 					self.head = item
 					return
 				item = Node(coeff,exp)
+				#nxt = curr.next
 				prev.next = item
 				item.next = curr
 				return
